@@ -33,6 +33,8 @@ models:
   netflix:
     +materialized: view
     dim: 
+      +materialized: table 
+    fact:
       +materialized: table
     # Config indicated by + and applies to all files under models/example/
   #  example:
